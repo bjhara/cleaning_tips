@@ -21,6 +21,13 @@ _TIPS = [
     "Städa upp i spat.",
     "Städa i duschen. Torka bort allt vatten vid fönstret.",
     "Rengör ljusknappar och dörrhandtag.",
+    "Torka av lister och dörrkarmar.",
+    "Rengör köksfläkten.",
+    "Rensa och torka ur besticklådan.",
+    "Rengör sopkärl och komposthink.",
+    "Torka av element och bakom dem om möjligt.",
+    "Rensa och torka av nattduksbord.",
+    "Rengör tekokaren.",
 ]
 
 
