@@ -1,7 +1,12 @@
+import logging
+
 from requests import post
 
 from semirandom import semi_random
 from tips import random_tip
+
+
+logger = logging.getLogger(__name__)
 
 
 def read_topic_name() -> str:
@@ -19,7 +24,15 @@ def send_message(message: str) -> None:
 
 
 def main():
+    logging.basicConfig(
+        filename="cleaning-tips.log",
+        level=logging.INFO,
+        format="%(asctime)s [%(levelname)s] %(message)s",
+    )
+
+    logger.info("Running")
     if semi_random():
+        logging.info("Sending notification")
         send_message(random_tip())
 
 
